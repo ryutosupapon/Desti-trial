@@ -1,0 +1,1079 @@
+
+> dev:3001
+> next dev -p 3001
+
+   ▲ Next.js 15.5.6
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.178:3001
+   - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1622ms
+ ⚠ Your project has `@next/font` installed as a dependency, please use the built-in `next/font` instead. The `@next/font` package will be removed in Next.js 14. You can migrate by running `npx @next/codemod@latest built-in-next-font .`. Read more: https://nextjs.org/docs/messages/built-in-next-font
+ ○ Compiling /api/health ...
+ ✓ Compiled /api/health in 1603ms (296 modules)
+ GET /api/health 200 in 1819ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 12.1s (1919 modules)
+ GET /dashboard 200 in 12792ms
+ ○ Compiling / ...
+ ✓ Compiled /api/auth/[...nextauth] in 6.1s (2137 modules)
+ GET /api/auth/session 200 in 5304ms
+ GET / 200 in 7888ms
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ POST /api/auth/_log 200 in 1474ms
+ GET /api/auth/session 200 in 55ms
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 994ms (2144 modules)
+ GET /auth/signin 200 in 1347ms
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/auth/session 200 in 420ms
+ GET /api/auth/session 200 in 212ms
+ GET /dashboard 200 in 220ms
+ GET /dashboard 200 in 72ms
+ ○ Compiling /api/trips ...
+ ✓ Compiled /api/trips in 726ms (2217 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/trips 200 in 925ms
+ GET /api/trips 200 in 17ms
+ ○ Compiling /plan ...
+ ✓ Compiled /plan in 1320ms (2233 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /plan 200 in 1607ms
+ POST /api/trips 200 in 125ms
+ ○ Compiling /plan/select-photos ...
+ ✓ Compiled /plan/select-photos in 1411ms (2297 modules)
+ GET /plan/select-photos?tripId=cmhvr532500018fx15t6601co 200 in 1763ms
+ GET /plan/select-photos?tripId=cmhvr532500018fx15t6601co 200 in 76ms
+ ○ Compiling /api/trips/[id] ...
+ ✓ Compiled /api/trips/[id] in 1002ms (2285 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/trips/cmhvr532500018fx15t6601co 200 in 2354ms
+ GET /api/trips/cmhvr532500018fx15t6601co 200 in 36ms
+ ✓ Compiled /api/destinations/[key]/locations in 458ms (2288 modules)
+ GET /api/destinations/dolomites/locations 200 in 1183ms
+ GET /api/destinations/dolomites/locations 200 in 18ms
+ ○ Compiling /api/trips/[id]/select-photos ...
+ ✓ Compiled /api/trips/[id]/select-photos in 751ms (2285 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ POST /api/trips/cmhvr532500018fx15t6601co/select-photos 200 in 1811ms
+ ○ Compiling /plan/generate ...
+ ✓ Compiled /plan/generate in 1311ms (2310 modules)
+ GET /plan/generate?tripId=cmhvr532500018fx15t6601co 200 in 1440ms
+ GET /plan/generate?tripId=cmhvr532500018fx15t6601co 200 in 162ms
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/trips 200 in 199ms
+ GET /api/trips 200 in 17ms
+ ○ Compiling /api/trips/[id]/generate-itinerary ...
+ ✓ Compiled /api/trips/[id]/generate-itinerary in 1943ms (2407 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ POST /api/trips/cmhvr532500018fx15t6601co/generate-itinerary 200 in 32361ms
+ ○ Compiling /plan/itinerary ...
+ ✓ Compiled /plan/itinerary in 4.1s (2830 modules)
+ GET /plan/itinerary?tripId=cmhvr532500018fx15t6601co 200 in 4634ms
+ GET /plan/itinerary?tripId=cmhvr532500018fx15t6601co 200 in 57ms
+ ○ Compiling /api/trips/[id] ...
+ ✓ Compiled /api/trips/[id] in 1563ms (1709 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/trips/cmhvr532500018fx15t6601co 200 in 1880ms
+ GET /api/trips/cmhvr532500018fx15t6601co 200 in 85ms
+ GET /dashboard 200 in 141ms
+ GET /api/trips 200 in 247ms
+ GET /api/trips 200 in 32ms
+ ✓ Compiled in 1069ms (1123 modules)
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 11.4s (1492 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/auth/session 200 in 17067ms
+ GET /api/auth/session 200 in 2426ms
+ GET /api/auth/session 200 in 1205ms
+ GET /api/auth/session 200 in 512ms
+ GET /dashboard 200 in 3729ms
+ GET /api/auth/session 200 in 115ms
+ ○ Compiling /api/trips ...
+ ✓ Compiled /api/trips in 2.8s (1577 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/trips 200 in 3723ms
+ GET /plan 200 in 95ms
+ POST /api/trips 200 in 207ms
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 48ms
+ ○ Compiling /api/trips/[id] ...
+ ✓ Compiled /api/trips/[id] in 681ms (1579 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 817ms
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 39ms
+ ✓ Compiled /api/destinations/[key]/locations in 193ms (1582 modules)
+ GET /api/destinations/lofoten/locations 200 in 251ms
+ GET /api/destinations/lofoten/locations 200 in 15ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 2.5s (2710 modules)
+ GET /destinations/lofoten/haukland-beach/primary.jpg 404 in 2756ms
+ GET /destinations/lofoten/reinebringen/primary.jpg 404 in 2752ms
+ GET /destinations/lofoten/haukland-beach/primary.jpg 404 in 67ms
+ GET /destinations/lofoten/reinebringen/primary.jpg 404 in 67ms
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 273ms
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/auth/session 200 in 114ms
+ GET /api/auth/session 200 in 86ms
+ GET /api/auth/session 200 in 601ms
+ ✓ Compiled /api/trips/[id] in 3.6s (2608 modules)
+ ✓ Compiled in 1ms (1575 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 891ms
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 1490ms
+ ✓ Compiled /api/destinations/[key]/locations in 288ms (1578 modules)
+ GET /api/destinations/lofoten/locations 200 in 384ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 771ms (2706 modules)
+ GET /destinations/lofoten/haukland-beach/primary.jpg 404 in 990ms
+ GET /destinations/lofoten/reinebringen/primary.jpg 404 in 991ms
+ GET /destinations/lofoten/reinebringen/primary.jpg 404 in 58ms
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 263ms
+ GET /destinations/lofoten/haukland-beach/primary.jpg 404 in 60ms
+ ✓ Compiled in 859ms (2706 modules)
+ GET /destinations/lofoten/haukland-beach/primary.jpg 404 in 284ms
+ GET /destinations/lofoten/reinebringen/primary.jpg 404 in 281ms
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 399ms
+ GET /destinations/lofoten/haukland-beach/primary.jpg 404 in 111ms
+ GET /destinations/lofoten/reinebringen/primary.jpg 404 in 107ms
+ ✓ Compiled /api/health in 262ms (1581 modules)
+ GET /api/health 200 in 328ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 2.2s (1507 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/auth/session 200 in 2568ms
+ GET /api/auth/session 200 in 199ms
+ GET /api/auth/session 200 in 57ms
+ ○ Compiling /api/destinations/[key]/locations ...
+ ✓ Compiled /api/destinations/[key]/locations in 1511ms (1576 modules)
+Create location failed: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at async POST (src/app/api/destinations/[key]/locations/route.ts:85:35)
+  83 |
+  84 |     if (contentType.includes('application/json')) {
+> 85 |       parsed = createSchema.parse(await request.json())
+     |                                   ^
+  86 |     } else if (contentType.includes('multipart/form-data')) {
+  87 |       const form = await request.formData()
+  88 |       const name = String(form.get('name') || '')
+ POST /api/destinations/lofoten/locations 500 in 1965ms
+Create location failed: SyntaxError: Expected property name or '}' in JSON at position 2 (line 1 column 3)
+    at JSON.parse (<anonymous>)
+    at async POST (src/app/api/destinations/[key]/locations/route.ts:85:35)
+  83 |
+  84 |     if (contentType.includes('application/json')) {
+> 85 |       parsed = createSchema.parse(await request.json())
+     |                                   ^
+  86 |     } else if (contentType.includes('multipart/form-data')) {
+  87 |       const form = await request.formData()
+  88 |       const name = String(form.get('name') || '')
+ POST /api/destinations/lofoten/locations 500 in 151ms
+ POST /api/destinations/lofoten/locations 201 in 75ms
+ ✓ Compiled in 738ms (1123 modules)
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 257ms
+ ✓ Compiled in 280ms (1123 modules)
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 18ms
+ POST /api/destinations/lofoten/locations 400 in 56ms
+ POST /api/destinations/lofoten/locations 400 in 28ms
+ POST /api/destinations/lofoten/locations 400 in 67ms
+ POST /api/destinations/lofoten/locations 400 in 10ms
+ POST /api/destinations/lofoten/locations 400 in 13ms
+ POST /api/destinations/lofoten/locations 400 in 11ms
+ POST /api/destinations/lofoten/locations 400 in 9ms
+ POST /api/destinations/lofoten/locations 201 in 77ms
+ POST /api/destinations/lofoten/locations 201 in 47ms
+ ✓ Compiled in 359ms (1123 modules)
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 283ms
+ ✓ Compiled in 360ms (1123 modules)
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 19ms
+ POST /api/destinations/lofoten/locations 201 in 44ms
+ POST /api/destinations/lofoten/locations 201 in 81ms
+ POST /api/destinations/lofoten/locations 201 in 68ms
+ POST /api/destinations/lofoten/locations 201 in 107ms
+ POST /api/destinations/lofoten/locations 201 in 52ms
+ GET /api/destinations/lofoten/locations 200 in 84ms
+ GET /api/destinations/lofoten/locations 200 in 14ms
+ GET /api/destinations/lofoten/locations 200 in 44ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 3.7s (2704 modules)
+ GET /destinations/lofoten/reinebringen/primary.jpg 404 in 1845ms
+ GET /destinations/lofoten/haukland-beach/primary.jpg 404 in 1850ms
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 907ms
+ GET /destinations/lofoten/haukland-beach/primary.jpg 404 in 171ms
+ GET /destinations/lofoten/reinebringen/primary.jpg 404 in 173ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 1562ms (1493 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/auth/session 200 in 2290ms
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 482ms
+ GET /api/auth/session 200 in 208ms
+ ○ Compiling /api/trips/[id] ...
+ ✓ Compiled /api/trips/[id] in 4.4s (1578 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 4940ms
+ ✓ Compiled /api/destinations/[key]/locations in 419ms (1581 modules)
+ GET /api/destinations/lofoten/locations 200 in 511ms
+ GET /destinations/lofoten/haukland-beach/primary.jpg 404 in 605ms
+ GET /destinations/lofoten/reinebringen/primary.jpg 404 in 596ms
+ GET /destinations/lofoten/haukland-beach/primary.jpg 404 in 61ms
+ GET /destinations/lofoten/reinebringen/primary.jpg 404 in 62ms
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/auth/session 200 in 380ms
+ GET /api/auth/session 200 in 515ms
+ GET /api/auth/session 200 in 2262ms
+ GET /api/auth/session 200 in 448ms
+ GET /api/auth/session 200 in 99ms
+ GET /api/auth/session 200 in 133ms
+ GET /api/auth/session 200 in 204ms
+ GET /api/auth/session 200 in 146ms
+ GET /api/auth/session 200 in 70ms
+ GET /api/auth/session 200 in 315ms
+ GET /api/auth/session 200 in 324ms
+ GET /api/auth/session 200 in 305ms
+ GET /api/auth/session 200 in 194ms
+ GET /api/auth/session 200 in 885ms
+ GET /api/auth/session 200 in 210ms
+ GET /api/auth/session 200 in 397ms
+ ○ Compiling /destinations/[key]/upload ...
+ ✓ Compiled /destinations/[key]/upload in 4.7s (2622 modules)
+ GET /destinations/lofoten/upload 200 in 6470ms
+ GET /destinations/lofoten/upload 200 in 66ms
+ ○ Compiling /api/destinations/[key]/locations ...
+ ✓ Compiled /api/destinations/[key]/locations in 2.9s (1583 modules)
+ GET /api/destinations/lofoten/locations 200 in 3766ms
+ GET /api/destinations/lofoten/locations 200 in 33ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1170ms (2699 modules)
+ GET /destinations/lofoten/haukland-beach/primary.jpg?t=0 404 in 1795ms
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/auth/session 200 in 198ms
+ ○ Compiling /api/curated/photos/[photoId]/upload ...
+ ✓ Compiled /api/curated/photos/[photoId]/upload in 5.2s (2701 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /destinations/lofoten/reinebringen/primary.jpg?t=0 404 in 3555ms
+ POST /api/curated/photos/cmhx25b9l000m8fx1y8w6voa2/upload 200 in 12491ms
+ GET /destinations/lofoten/reinebringen/primary.jpg?t=1763027931716 404 in 324ms
+ GET /destinations/lofoten/haukland-beach/primary.jpg?t=1763027931716 404 in 357ms
+ POST /api/curated/photos/cmhx26ar3000y8fx1scqbq4ff/upload 200 in 1853ms
+ GET /destinations/lofoten/haukland-beach/primary.jpg?t=1763027935599 404 in 619ms
+ GET /destinations/lofoten/reinebringen/primary.jpg?t=1763027935599 404 in 539ms
+ POST /api/curated/photos/cmhx24raq000g8fx1t8ipb3ur/upload 200 in 864ms
+ GET /destinations/lofoten/haukland-beach/primary.jpg?t=1763027949626 404 in 227ms
+ GET /destinations/lofoten/reinebringen/primary.jpg?t=1763027949626 404 in 217ms
+ POST /api/curated/photos/cmh3zbrdj000o8fhpigam74sf/upload 200 in 630ms
+ GET /destinations/lofoten/haukland-beach/primary.jpg?t=1763027959664 404 in 147ms
+ POST /api/curated/photos/cmhx25vqm000s8fx1yqfpm3vn/upload 200 in 172ms
+ GET /destinations/lofoten/haukland-beach/primary.jpg?t=1763027966608 404 in 93ms
+ POST /api/curated/photos/cmhx264ux000v8fx1t889zeki/upload 200 in 120ms
+ GET /destinations/lofoten/haukland-beach/primary.jpg?t=1763027970807 404 in 681ms
+ POST /api/curated/photos/cmhx26fpe00118fx16bm22vda/upload 200 in 84ms
+ GET /destinations/lofoten/haukland-beach/primary.jpg?t=1763027975028 404 in 132ms
+ POST /api/curated/photos/cmhx255mt000j8fx1wn1x5zvv/upload 200 in 81ms
+ GET /destinations/lofoten/haukland-beach/primary.jpg?t=1763027979914 404 in 388ms
+ GET /api/auth/session 200 in 938ms
+ POST /api/curated/photos/cmh3zp6lr000o8ft7oxs37neh/upload 200 in 111ms
+ GET /api/auth/session 200 in 558ms
+ GET /plan 200 in 262ms
+ ○ Compiling /api/trips ...
+ ✓ Compiled /api/trips in 1648ms (1580 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ POST /api/trips 200 in 1952ms
+ GET /plan/select-photos?tripId=cmhx9fuy800138fx1hhmdpvtl 200 in 345ms
+ ○ Compiling /api/trips/[id] ...
+ ✓ Compiled /api/trips/[id] in 587ms (1582 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/trips/cmhx9fuy800138fx1hhmdpvtl 200 in 968ms
+ GET /api/trips/cmhx9fuy800138fx1hhmdpvtl 200 in 53ms
+ ✓ Compiled /api/destinations/[key]/locations in 410ms (1584 modules)
+ GET /api/destinations/lofoten/locations 200 in 523ms
+ GET /api/destinations/lofoten/locations 200 in 31ms
+ ○ Compiling /api/trips/[id]/select-photos ...
+ ✓ Compiled /api/trips/[id]/select-photos in 1798ms (1584 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ POST /api/trips/cmhx9fuy800138fx1hhmdpvtl/select-photos 200 in 2179ms
+ GET /plan/generate?tripId=cmhx9fuy800138fx1hhmdpvtl 200 in 295ms
+ GET /api/trips 200 in 75ms
+ GET /api/trips 200 in 36ms
+ ○ Compiling /api/trips/[id]/generate-itinerary ...
+ ✓ Compiled /api/trips/[id]/generate-itinerary in 706ms (1695 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ POST /api/trips/cmhx9fuy800138fx1hhmdpvtl/generate-itinerary 200 in 16912ms
+ GET /plan/itinerary?tripId=cmhx9fuy800138fx1hhmdpvtl 200 in 185ms
+ GET /api/trips/cmhx9fuy800138fx1hhmdpvtl 200 in 170ms
+ GET /api/trips/cmhx9fuy800138fx1hhmdpvtl 200 in 87ms
+ GET /api/auth/session 200 in 458ms
+ GET /dashboard 200 in 267ms
+ GET /api/trips 200 in 209ms
+ GET /api/trips 200 in 28ms
+ GET /api/auth/session 200 in 183ms
+ ✓ Compiled in 1996ms (1125 modules)
+ ✓ Compiled in 112ms (1125 modules)
+ GET /api/auth/session 200 in 713ms
+ GET /dashboard 200 in 1626ms
+ GET /api/auth/session 200 in 98ms
+ GET /api/trips 200 in 243ms
+ GET /api/auth/session 200 in 174ms
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 169ms
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 172ms
+ GET /api/destinations/lofoten/locations 200 in 144ms
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 141ms
+ GET /api/destinations/lofoten/locations 200 in 256ms
+ GET /api/auth/session 200 in 136ms
+ ✓ Compiled in 3s (1125 modules)
+ ✓ Compiled in 165ms (1125 modules)
+ ✓ Compiled in 157ms (1125 modules)
+ ✓ Compiled in 315ms (1125 modules)
+ GET /api/destinations/lofoten/locations 200 in 56ms
+ GET /api/auth/session 200 in 80ms
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 286ms
+ GET /api/auth/session 200 in 31ms
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 40ms
+ GET /api/destinations/lofoten/locations 200 in 89ms
+ GET /api/auth/session 200 in 127ms
+ GET /api/destinations/lofoten/locations 200 in 380ms
+ GET /api/destinations/lofoten/locations 200 in 179ms
+ GET /api/destinations/lofoten/locations 200 in 61ms
+ ✓ Compiled in 3.7s (1125 modules)
+ ✓ Compiled in 265ms (1125 modules)
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 145ms
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 31ms
+ ✓ Compiled in 327ms (1125 modules)
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 138ms
+ ✓ Compiled in 225ms (1125 modules)
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 56ms
+ GET /api/destinations/lofoten/locations 200 in 52ms
+ GET /api/auth/session 200 in 193ms
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 594ms
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 435ms
+ GET /api/auth/session 200 in 56ms
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 279ms
+ GET /api/destinations/lofoten/locations 200 in 35ms
+ GET /api/auth/session 200 in 92ms
+ ✓ Compiled in 3.8s (1125 modules)
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 446ms
+ ✓ Compiled in 496ms (1125 modules)
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 95ms
+ ✓ Compiled in 370ms (1125 modules)
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 251ms
+ ✓ Compiled in 295ms (1125 modules)
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 42ms
+ GET /api/destinations/lofoten/locations 200 in 97ms
+ GET /api/auth/session 200 in 140ms
+ GET /api/auth/session 200 in 737ms
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 1131ms
+ GET /api/auth/session 200 in 124ms
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 154ms
+ GET /api/destinations/lofoten/locations 200 in 64ms
+ ○ Compiling / ...
+ ✓ Compiled / in 3.1s (1504 modules)
+ GET / 200 in 3510ms
+ ✓ Compiled /auth/signin in 494ms (1509 modules)
+ GET /auth/signin 200 in 714ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 655ms (1516 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/auth/session 200 in 1283ms
+ GET /api/auth/session 200 in 170ms
+ GET /dashboard 200 in 544ms
+ GET /dashboard 200 in 93ms
+ ○ Compiling /api/trips ...
+ ✓ Compiled /api/trips in 1113ms (1587 modules)
+[next-auth][warn][DEBUG_ENABLED] 
+https://next-auth.js.org/warnings#debug_enabled
+ GET /api/trips 200 in 1967ms
+ GET /api/trips 200 in 55ms
+ GET /api/auth/session 200 in 152ms
+ ✓ Compiled in 5s (2383 modules)
+ GET /dashboard 200 in 697ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 4s (1497 modules)
+ GET /api/auth/session 200 in 6356ms
+ GET /dashboard 200 in 2287ms
+ GET /dashboard 200 in 3376ms
+ POST /api/auth/_log 200 in 123ms
+ GET /api/auth/session 200 in 92ms
+ ○ Compiling /api/trips ...
+ ✓ Compiled /api/trips in 3.6s (1582 modules)
+ GET /dashboard 200 in 1878ms
+ GET /api/trips 200 in 6681ms
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 798ms
+ ○ Compiling /api/trips/[id] ...
+ ✓ Compiled /api/trips/[id] in 3.4s (1584 modules)
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 3912ms
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 556ms
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 227ms
+ ○ Compiling /api/destinations/[key]/locations ...
+ ✓ Compiled /api/destinations/[key]/locations in 732ms (1587 modules)
+ GET /api/destinations/lofoten/locations 200 in 1009ms
+ GET /api/destinations/lofoten/locations 200 in 52ms
+ GET /api/auth/csrf 200 in 209ms
+ POST /api/auth/signout 200 in 25ms
+ GET / 200 in 885ms
+ GET /api/auth/session 200 in 53ms
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 1896ms (1592 modules)
+ GET /auth/signin 200 in 2016ms
+ GET /api/auth/session 200 in 158ms
+ GET /api/auth/session 200 in 14ms
+ GET /api/auth/providers 200 in 48ms
+ GET /api/auth/csrf 200 in 17ms
+ POST /api/auth/signin/google 200 in 307ms
+ GET /api/auth/callback/google?state=zDhS4j14sPLZv6mA4YHmBhXLBAKSGB59uP1_B_hXb8M&code=4%2F0Ab32j92M6vDiKifCUJCntfvpQ4BsM2Ruyz-bLsYtUX4iSK3tA1nMkSOoG2BMS9pLwDOhJQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&hd=usc.edu&prompt=none 302 in 672ms
+ GET /dashboard 200 in 433ms
+ GET /api/auth/session 200 in 38ms
+ GET /api/trips 200 in 115ms
+ GET /api/auth/csrf 200 in 37ms
+ POST /api/auth/signout 200 in 29ms
+ GET / 200 in 186ms
+ GET /api/auth/session 200 in 23ms
+ GET /auth/signin 200 in 43ms
+ GET /api/auth/session 200 in 26ms
+ GET /api/auth/session 200 in 20ms
+ GET /api/auth/providers 200 in 17ms
+ GET /api/auth/csrf 200 in 17ms
+ POST /api/auth/signin/google 200 in 129ms
+ GET /api/auth/callback/google?state=JXODoSHNmBU2h6a3703KjAvpos-wJv5dSSEhFKOQ8Z8&code=4%2F0Ab32j91ss7Sq0pKSUjS5doWHVyOflM9YXXsbi5a232Q-NpqPtRH3KYTXqUDr98XwWRnu7Q&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=1&prompt=consent 302 in 610ms
+ GET /dashboard 200 in 76ms
+ GET /api/auth/session 200 in 17ms
+ GET /api/trips 200 in 34ms
+ GET /api/auth/csrf 200 in 54ms
+ POST /api/auth/signout 200 in 15ms
+ GET / 200 in 126ms
+ GET /api/auth/session 200 in 51ms
+ GET /auth/signin 200 in 36ms
+ GET /api/auth/session 200 in 14ms
+ GET /api/auth/session 200 in 37ms
+ GET /api/auth/providers 200 in 19ms
+ GET /api/auth/csrf 200 in 12ms
+ POST /api/auth/signin/google 200 in 245ms
+ GET /api/auth/callback/google?state=JBvyR78CW9SfSc9aqJbBmKUJYhuKiJ3wRRLePrE3-fU&code=4%2F0Ab32j92WOqw8YbH6IC4PLUmGsoy6f_fw6P8gUSHq0GaIOhYVz8dCYAV8MEwOsMTayMA0vA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&hd=usc.edu&prompt=none 302 in 437ms
+ GET /dashboard 200 in 56ms
+ GET /api/auth/session 200 in 101ms
+ GET /api/trips 200 in 30ms
+ ○ Compiling /plan ...
+ ✓ Compiled /plan in 1824ms (1606 modules)
+ GET /plan 200 in 2220ms
+ GET /plan 200 in 36ms
+ GET /plan 200 in 125ms
+ GET /plan 200 in 29ms
+ GET / 200 in 98ms
+ GET /plan 200 in 88ms
+ GET /dashboard 200 in 121ms
+ GET /api/trips 200 in 129ms
+ GET /api/trips 200 in 22ms
+ GET /api/auth/session 200 in 1002ms
+ GET /api/auth/session 200 in 256ms
+ GET /api/auth/session 200 in 142ms
+ GET /api/auth/csrf 200 in 50ms
+ POST /api/auth/signout 200 in 47ms
+ GET / 200 in 720ms
+ GET /api/auth/session 200 in 289ms
+ GET /auth/signin 200 in 89ms
+ GET /api/auth/session 200 in 64ms
+ GET /api/auth/session 200 in 19ms
+ GET /api/auth/providers 200 in 27ms
+ GET /api/auth/csrf 200 in 21ms
+ POST /api/auth/signin/google 200 in 171ms
+ GET /api/auth/callback/google?state=btwUMZfB_u6wtTVGDMp35qOA6iRtKAK7U7SIs2nf0zk&code=4%2F0Ab32j92gUSUjmpAbqrHJ6FqCi4dE4EBUCH_sLAhGvyMs7enCfQSbfdyIeoQr1N_novJFyQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&hd=usc.edu&prompt=none 302 in 575ms
+ GET /dashboard 200 in 210ms
+ GET /api/auth/session 200 in 35ms
+ GET /api/trips 200 in 33ms
+ GET /plan 200 in 183ms
+ POST /api/trips 200 in 75ms
+ GET /plan/select-photos?tripId=cmi00xcvt001i8fx13tienepi 200 in 83ms
+ GET /api/trips/cmi00xcvt001i8fx13tienepi 200 in 80ms
+ GET /api/trips/cmi00xcvt001i8fx13tienepi 200 in 67ms
+ GET /api/destinations/dolomites/locations 200 in 74ms
+ GET /api/destinations/dolomites/locations 200 in 34ms
+ ○ Compiling /api/trips/[id]/select-photos ...
+ ✓ Compiled /api/trips/[id]/select-photos in 1500ms (1388 modules)
+ GET /plan/select-photos?tripId=cmi00xcvt001i8fx13tienepi 200 in 313ms
+ POST /api/trips/cmi00xcvt001i8fx13tienepi/select-photos 200 in 1903ms
+ ○ Compiling /plan/generate ...
+ ✓ Compiled /plan/generate in 2.4s (1396 modules)
+ GET /plan/generate?tripId=cmi00xcvt001i8fx13tienepi 200 in 2927ms
+ ○ Compiling /api/trips ...
+ ✓ Compiled /api/trips in 847ms (1398 modules)
+ GET /api/trips 200 in 1071ms
+ GET /api/trips 200 in 23ms
+ ✓ Compiled /api/trips/[id]/generate-itinerary in 426ms (1488 modules)
+ GET /plan/generate?tripId=cmi00xcvt001i8fx13tienepi 200 in 210ms
+ POST /api/trips/cmi00xcvt001i8fx13tienepi/generate-itinerary 200 in 30221ms
+ ○ Compiling /plan/itinerary ...
+ ✓ Compiled /plan/itinerary in 2.3s (1694 modules)
+ GET /plan/itinerary?tripId=cmi00xcvt001i8fx13tienepi 200 in 2608ms
+ ✓ Compiled /api/trips/[id] in 487ms (1696 modules)
+ GET /api/trips/cmi00xcvt001i8fx13tienepi 200 in 615ms
+ GET /api/trips/cmi00xcvt001i8fx13tienepi 200 in 17ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 1726ms (1490 modules)
+ GET /dashboard 200 in 2058ms
+ ○ Compiling /api/trips ...
+ ✓ Compiled /api/trips in 601ms (1580 modules)
+ GET /api/trips 200 in 1690ms
+ GET /api/trips 200 in 21ms
+ GET /plan/select-photos?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 100ms
+ ○ Compiling /api/trips/[id] ...
+ ✓ Compiled /api/trips/[id] in 577ms (1568 modules)
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 798ms
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 69ms
+ ○ Compiling /api/destinations/[key]/locations ...
+ ✓ Compiled /api/destinations/[key]/locations in 1519ms (1571 modules)
+ GET /api/destinations/lofoten/locations 200 in 1603ms
+ GET /api/destinations/lofoten/locations 200 in 12ms
+ ○ Compiling /api/trips/[id]/select-photos ...
+ ✓ Compiled /api/trips/[id]/select-photos in 1420ms (1573 modules)
+ POST /api/trips/cmhx1io54000d8fx1m55d8xwp/select-photos 200 in 1571ms
+ GET /plan/generate?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 213ms
+ ✓ Compiled in 1107ms (1125 modules)
+ ✓ Compiled in 274ms (1125 modules)
+ POST /api/trips/cmhx1io54000d8fx1m55d8xwp/select-photos 200 in 172ms
+ GET /plan/generate?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 64ms
+ GET /plan/generate?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 113ms
+ GET /api/trips 200 in 76ms
+ GET /plan/generate?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 111ms
+ GET /api/trips 200 in 88ms
+ ✓ Compiled /api/trips/[id]/generate-itinerary in 418ms (1684 modules)
+ POST /api/trips/cmhx1io54000d8fx1m55d8xwp/generate-itinerary 200 in 33468ms
+ GET /plan/itinerary?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 112ms
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 101ms
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 27ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 2.3s (1483 modules)
+ GET /api/auth/session 200 in 2674ms
+ GET /api/auth/session 200 in 1487ms
+ ○ Compiling / ...
+ ✓ Compiled / in 10.3s (1502 modules)
+ GET /dashboard 200 in 4638ms
+ GET /plan/itinerary?tripId=cmhx1io54000d8fx1m55d8xwp 200 in 1115ms
+ GET / 200 in 13067ms
+ GET /dashboard 200 in 570ms
+ GET / 200 in 574ms
+ GET /api/auth/session 200 in 210ms
+ ○ Compiling /api/trips/[id] ...
+ ✓ Compiled /api/trips/[id] in 771ms (1587 modules)
+ GET /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 1750ms
+ GET / 200 in 131ms
+ GET /api/auth/session 200 in 347ms
+ GET /api/auth/session 200 in 1136ms
+ GET /api/auth/session 200 in 572ms
+ GET /api/auth/session 200 in 397ms
+ GET /api/auth/session 200 in 888ms
+ GET /api/auth/session 200 in 217ms
+ GET /api/auth/session 200 in 62ms
+ GET /api/auth/session 200 in 189ms
+ GET /api/auth/session 200 in 94ms
+ GET /api/auth/session 200 in 143ms
+ GET /api/auth/session 200 in 60ms
+ GET /api/auth/session 200 in 124ms
+ GET /api/auth/session 200 in 452ms
+ GET /api/auth/session 200 in 127ms
+ ✓ Compiled in 6.4s (2622 modules)
+ GET /api/auth/session 200 in 3895ms
+ GET / 200 in 3199ms
+ GET /api/auth/session 200 in 1636ms
+ GET /api/auth/session 200 in 220ms
+ ○ Compiling /auth/signin ...
+ ✓ Compiled /auth/signin in 1346ms (1502 modules)
+ GET /auth/signin 200 in 1497ms
+ GET /api/auth/session 200 in 119ms
+ GET /api/auth/session 200 in 11ms
+ GET /dashboard 200 in 1281ms
+ GET /dashboard 200 in 79ms
+ ○ Compiling /api/trips ...
+ ✓ Compiled /api/trips in 4.8s (1587 modules)
+ GET /api/trips 200 in 7130ms
+ GET /api/trips 200 in 45ms
+ ✓ Compiled /api/trips/[id] in 487ms (1562 modules)
+ DELETE /api/trips/cmhvr532500018fx15t6601co 200 in 874ms
+ DELETE /api/trips/cmhx9fuy800138fx1hhmdpvtl 200 in 45ms
+ DELETE /api/trips/cmhx1io54000d8fx1m55d8xwp 200 in 42ms
+ GET /plan/itinerary?tripId=cmi00xcvt001i8fx13tienepi 200 in 194ms
+ GET /api/trips/cmi00xcvt001i8fx13tienepi 200 in 34ms
+ GET /api/trips/cmi00xcvt001i8fx13tienepi 200 in 35ms
+ GET /api/auth/session 200 in 90ms
+ GET /dashboard 200 in 99ms
+ GET /api/trips 200 in 85ms
+ GET /api/trips 200 in 66ms
+ GET / 200 in 77ms
+ GET /api/auth/session 200 in 193ms
+ GET /api/auth/session 200 in 500ms
+ GET /api/auth/session 200 in 149ms
+ GET /api/auth/session 200 in 99ms
+ GET /api/auth/session 200 in 1168ms
+ GET / 200 in 445ms
+ GET / 200 in 131ms
+ GET /api/auth/session 200 in 85ms
+ GET /api/auth/session 200 in 195ms
+ GET /api/auth/session 200 in 82ms
+ GET /api/auth/session 200 in 472ms
+ ✓ Compiled in 7.6s (2600 modules)
+ GET / 200 in 425ms
+ GET /api/auth/session 200 in 264ms
+ ✓ Compiled in 6.5s (2600 modules)
+ GET / 200 in 337ms
+ GET /api/auth/session 200 in 411ms
+ GET /api/auth/session 200 in 1189ms
+ GET /api/auth/session 200 in 160ms
+ GET /api/auth/session 200 in 68ms
+ GET /api/auth/session 200 in 97ms
+ GET /api/auth/session 200 in 54ms
+ GET /api/auth/session 200 in 143ms
+ GET /api/auth/session 200 in 393ms
+ GET /api/auth/session 200 in 61ms
+ GET /api/auth/session 200 in 86ms
+ GET /api/auth/session 200 in 64ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 27.2s (2600 modules)
+ GET /api/auth/session 200 in 5551ms
+ GET / 200 in 439ms
+ GET /api/auth/session 200 in 2046ms
+ GET /api/auth/session 200 in 477ms
+ GET /api/auth/session 200 in 1103ms
+ GET /api/auth/session 200 in 858ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 41.7s (2627 modules)
+ GET /api/auth/session 200 in 6461ms
+ GET / 200 in 213ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 8.1s (2618 modules)
+ GET /hero/dolomites.jpg 404 in 8877ms
+ ⨯ The requested resource isn't a valid image for /hero/dolomites.jpg received null
+ GET /api/auth/session 200 in 2551ms
+ GET /api/auth/session 200 in 228ms
+ GET /api/auth/session 200 in 113ms
+ GET /api/auth/session 200 in 139ms
+ GET /api/auth/session 200 in 128ms
+ GET /api/auth/session 200 in 513ms
+ ✓ Compiled in 11.6s (2627 modules)
+ GET / 200 in 301ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1737ms (2618 modules)
+ GET /hero/dolomites.jpg 404 in 3424ms
+ ⨯ The requested resource isn't a valid image for /hero/dolomites.jpg received null
+ GET /api/auth/session 200 in 3538ms
+ GET / 200 in 479ms
+ GET /hero/dolomites.jpg 404 in 115ms
+ ⨯ The requested resource isn't a valid image for /hero/dolomites.jpg received null
+ GET /api/auth/session 200 in 20ms
+ GET /api/auth/session 200 in 947ms
+ GET /api/auth/session 200 in 661ms
+ GET / 200 in 976ms
+ GET /hero/dolomites.jpg 404 in 336ms
+ ⨯ The requested resource isn't a valid image for /hero/dolomites.jpg received null
+ GET /api/auth/session 200 in 107ms
+ GET /api/auth/session 200 in 50ms
+ GET /hero/dolomites.jpg 404 in 803ms
+ GET /api/auth/session 200 in 215ms
+ GET /api/auth/session 200 in 207ms
+ GET /api/auth/session 200 in 181ms
+ GET /hero/dolomites.jpg 404 in 1531ms
+ GET /api/auth/session 200 in 596ms
+ GET /api/auth/session 200 in 78ms
+ GET /api/auth/session 200 in 885ms
+ GET /api/auth/session 200 in 611ms
+ GET /api/auth/session 200 in 217ms
+ GET / 200 in 898ms
+ GET /hero/dolomites.jpg 404 in 519ms
+ ⨯ The requested resource isn't a valid image for /hero/dolomites.jpg received null
+ GET /api/auth/session 200 in 132ms
+ GET /api/auth/session 200 in 149ms
+ GET / 200 in 553ms
+ GET /api/auth/session 200 in 101ms
+ GET /api/auth/session 200 in 221ms
+ ✓ Compiled in 10.9s (2388 modules)
+ GET / 200 in 456ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 517ms (2379 modules)
+ GET /hero/switzerland.jpg 404 in 1058ms
+ GET /hero/patagonia.jpg 404 in 814ms
+ ⨯ The requested resource isn't a valid image for /hero/patagonia.jpg received null
+ ⨯ The requested resource isn't a valid image for /hero/switzerland.jpg received null
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 667ms (1503 modules)
+ GET /api/auth/session 200 in 1844ms
+ GET /api/auth/session 200 in 577ms
+ GET /api/auth/session 200 in 377ms
+ GET /api/auth/session 200 in 1169ms
+ GET /api/auth/session 200 in 236ms
+ GET /api/auth/session 200 in 662ms
+ GET / 200 in 1939ms
+ GET /hero/patagonia.jpg 404 in 567ms
+ ⨯ The requested resource isn't a valid image for /hero/patagonia.jpg received null
+ GET /api/auth/session 200 in 144ms
+ GET /api/auth/session 200 in 906ms
+ GET /api/auth/session 200 in 1018ms
+ GET / 200 in 3460ms
+ GET /hero/patagonia.jpg 404 in 340ms
+ ⨯ The requested resource isn't a valid image for /hero/patagonia.jpg received null
+ GET /api/auth/session 200 in 60ms
+ GET /api/auth/session 200 in 875ms
+ GET / 200 in 746ms
+ GET /hero/patagonia.jpg 404 in 450ms
+ ⨯ The requested resource isn't a valid image for /hero/patagonia.jpg received null
+ GET /api/auth/session 200 in 166ms
+ GET / 200 in 409ms
+ GET /hero/patagonia.jpg 404 in 49ms
+ ⨯ The requested resource isn't a valid image for /hero/patagonia.jpg received null
+ GET /api/auth/session 200 in 53ms
+ GET /api/auth/session 200 in 321ms
+ GET / 200 in 1053ms
+ GET /hero/patagonia.jpg 404 in 197ms
+ ⨯ The requested resource isn't a valid image for /hero/patagonia.jpg received null
+ GET /api/auth/session 200 in 172ms
+ GET /api/auth/session 200 in 1572ms
+ ✓ Compiled in 16.3s (2627 modules)
+ GET / 200 in 1614ms
+ GET /api/auth/session 200 in 2770ms
+ GET /api/auth/session 200 in 1452ms
+ GET /api/auth/session 200 in 959ms
+ GET /api/auth/session 200 in 1254ms
+ GET / 200 in 1550ms
+ GET /api/auth/session 200 in 122ms
+ GET /api/auth/session 200 in 618ms
+ ✓ Compiled in 8.1s (2627 modules)
+ GET / 200 in 118ms
+ ✓ Compiled in 610ms (1125 modules)
+ GET / 200 in 53ms
+ GET /api/auth/session 200 in 188ms
+ GET /api/auth/session 200 in 111ms
+ GET /api/auth/session 200 in 203ms
+ ✓ Compiled in 4.8s (2388 modules)
+ GET / 200 in 496ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 3s (1502 modules)
+ GET /api/auth/session 200 in 5749ms
+ ✓ Compiled in 6.6s (2388 modules)
+ GET / 200 in 805ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 2.7s (1502 modules)
+ GET /api/auth/session 200 in 3918ms
+ GET /api/auth/session 200 in 503ms
+ GET /api/auth/session 200 in 156ms
+ GET / 200 in 1888ms
+ GET /api/auth/session 200 in 809ms
+ GET /api/auth/session 200 in 1269ms
+ GET / 200 in 404ms
+ GET /api/auth/session 200 in 21ms
+ GET /api/auth/session 200 in 107ms
+ GET / 200 in 1845ms
+ GET /api/auth/session 200 in 30ms
+ ✓ Compiled in 6.6s (2388 modules)
+ GET / 200 in 753ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 3.3s (1502 modules)
+ GET /api/auth/session 200 in 4861ms
+ GET /api/auth/session 200 in 649ms
+ GET /api/auth/session 200 in 186ms
+ GET /api/auth/session 200 in 87ms
+ ✓ Compiled in 4.2s (2627 modules)
+ GET / 200 in 205ms
+ GET /api/auth/session 200 in 173ms
+ GET /api/auth/session 200 in 704ms
+ GET /api/auth/session 200 in 1348ms
+ ✓ Compiled in 6.9s (2627 modules)
+ GET /api/auth/session 200 in 4856ms
+ GET / 200 in 242ms
+ GET /api/auth/session 200 in 149ms
+ GET / 200 in 862ms
+ GET /api/auth/session 200 in 292ms
+ ✓ Compiled in 5.6s (2388 modules)
+ GET / 200 in 497ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 4.2s (1502 modules)
+ GET /api/auth/session 200 in 5186ms
+ GET /api/auth/session 200 in 457ms
+ GET /api/auth/session 200 in 201ms
+ GET /api/auth/session 200 in 91ms
+ ✓ Compiled in 8s (2388 modules)
+ GET / 200 in 1355ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 935ms (1502 modules)
+ GET /api/auth/session 200 in 3214ms
+ GET / 200 in 4988ms
+ GET /api/auth/session 200 in 364ms
+ GET /auth/signin 200 in 127ms
+ GET /api/auth/session 200 in 87ms
+ GET /api/auth/session 200 in 34ms
+ GET /dashboard 200 in 401ms
+ GET /dashboard 200 in 26ms
+ ○ Compiling /api/trips ...
+ ✓ Compiled /api/trips in 2.9s (1587 modules)
+ GET /api/trips 200 in 4192ms
+ GET /api/trips 200 in 33ms
+ GET /api/auth/session 200 in 2335ms
+ ✓ Compiled in 11.4s (2390 modules)
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 10.6s (1504 modules)
+ GET /api/auth/session 200 in 11380ms
+ GET / 200 in 796ms
+ GET / 200 in 128ms
+ GET /api/auth/session 200 in 680ms
+ ✓ Compiled in 7.2s (2390 modules)
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 4s (1504 modules)
+ GET /api/auth/session 200 in 5602ms
+ GET / 200 in 1136ms
+ POST /api/auth/_log 200 in 21ms
+ GET /api/auth/session 200 in 41ms
+ GET / 200 in 322ms
+ GET /api/auth/session 200 in 181ms
+ GET /api/auth/session 200 in 1685ms
+ GET /api/auth/session 200 in 3724ms
+ GET / 200 in 3905ms
+ POST /api/auth/_log 200 in 145ms
+ GET /api/auth/session 200 in 137ms
+ GET /api/auth/session 200 in 234ms
+ GET /api/auth/session 200 in 1895ms
+ GET /api/auth/session 200 in 77ms
+ ✓ Compiled in 8.9s (2629 modules)
+ GET / 200 in 183ms
+ GET /api/auth/session 200 in 1827ms
+ ✓ Compiled in 5.1s (2390 modules)
+ GET / 200 in 246ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 1543ms (1504 modules)
+ GET /api/auth/session 200 in 2466ms
+ ✓ Compiled in 3.3s (2390 modules)
+ GET / 200 in 249ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 2s (1504 modules)
+ GET /api/auth/session 200 in 4217ms
+Image with src "/logo.png?v=1" is using a query string which is not configured in images.localPatterns. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpatterns
+ GET / 200 in 468ms
+ GET /api/auth/session 200 in 619ms
+ GET /api/auth/session 200 in 1559ms
+ ✓ Compiled in 4.5s (2390 modules)
+ GET / 200 in 248ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 1449ms (1504 modules)
+ GET /api/auth/session 200 in 2810ms
+ ✓ Compiled in 3s (2629 modules)
+ GET / 200 in 294ms
+ GET /api/auth/session 200 in 1562ms
+ GET /auth/signin 200 in 1124ms
+ GET /api/auth/session 200 in 112ms
+ GET /api/auth/session 200 in 153ms
+ GET /dashboard 200 in 607ms
+ GET /dashboard 200 in 53ms
+ ○ Compiling /api/trips ...
+ ✓ Compiled /api/trips in 6s (1589 modules)
+ GET /api/trips 200 in 6856ms
+ GET /api/trips 200 in 12ms
+ ○ Compiling /plan ...
+ ✓ Compiled /plan in 2.5s (1603 modules)
+ GET /plan 200 in 2832ms
+ POST /api/trips 200 in 1732ms
+ ○ Compiling /plan/select-photos ...
+ ✓ Compiled /plan/select-photos in 1065ms (1606 modules)
+ GET /plan/select-photos?tripId=cmi2xeb9g00288fx1ct6x3ek5 200 in 1260ms
+ ○ Compiling /api/trips/[id] ...
+ ✓ Compiled /api/trips/[id] in 502ms (1608 modules)
+ GET /api/trips/cmi2xeb9g00288fx1ct6x3ek5 200 in 685ms
+ GET /api/trips/cmi2xeb9g00288fx1ct6x3ek5 200 in 23ms
+ ✓ Compiled /api/destinations/[key]/locations in 234ms (1611 modules)
+ GET /api/destinations/dolomites/locations 200 in 313ms
+ GET /api/destinations/dolomites/locations 200 in 15ms
+ ○ Compiling /api/trips/[id]/select-photos ...
+ ✓ Compiled /api/trips/[id]/select-photos in 7.8s (1407 modules)
+ POST /api/trips/cmi2xeb9g00288fx1ct6x3ek5/select-photos 200 in 8383ms
+ ○ Compiling /plan/generate ...
+ ✓ Compiled /plan/generate in 1735ms (1415 modules)
+ GET /plan/generate?tripId=cmi2xeb9g00288fx1ct6x3ek5 200 in 1857ms
+ GET /api/trips 200 in 1732ms
+ GET /api/trips 200 in 35ms
+ ○ Compiling /api/trips/[id]/generate-itinerary ...
+ ✓ Compiled /api/trips/[id]/generate-itinerary in 1371ms (1521 modules)
+ POST /api/trips/cmi2xeb9g00288fx1ct6x3ek5/generate-itinerary 200 in 22911ms
+ ✓ Compiled /plan/itinerary in 393ms (1706 modules)
+ GET /plan/itinerary?tripId=cmi2xeb9g00288fx1ct6x3ek5 200 in 488ms
+ ✓ Compiled /api/trips/[id] in 395ms (1708 modules)
+ GET /api/trips/cmi2xeb9g00288fx1ct6x3ek5 200 in 553ms
+ GET /api/trips/cmi2xeb9g00288fx1ct6x3ek5 200 in 42ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 519ms (1695 modules)
+ GET /dashboard 200 in 994ms
+ GET /api/trips 200 in 591ms
+ GET /api/trips 200 in 30ms
+ DELETE /api/trips/cmi2xeb9g00288fx1ct6x3ek5 200 in 74ms
+ DELETE /api/trips/cmi00xcvt001i8fx13tienepi 200 in 21ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 2.9s (1579 modules)
+ GET /api/auth/session 200 in 3480ms
+ GET /api/auth/session 200 in 393ms
+ GET /api/auth/session 200 in 2939ms
+ ○ Compiling / ...
+ ✓ Compiled / in 7.9s (1523 modules)
+ GET / 200 in 8845ms
+ GET / 200 in 160ms
+ GET /dashboard 200 in 1004ms
+ ○ Compiling /api/trips ...
+ ✓ Compiled /api/trips in 3.1s (1608 modules)
+ GET /api/trips 200 in 5810ms
+ GET / 200 in 4266ms
+ GET /api/trips 200 in 183ms
+ GET /dashboard 200 in 217ms
+ GET /api/trips 200 in 224ms
+ GET /api/trips 200 in 46ms
+ ✓ Compiled in 11.9s (2610 modules)
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 2.6s (1492 modules)
+Image with src "/logo.png?v=1" is using a query string which is not configured in images.localPatterns. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpatterns
+ GET /api/auth/session 200 in 5961ms
+ GET /dashboard 200 in 4219ms
+ POST /api/auth/_log 200 in 80ms
+ GET /api/auth/session 200 in 349ms
+ ○ Compiling /api/trips ...
+ ✓ Compiled /api/trips in 2.1s (1577 modules)
+ GET /api/trips 200 in 4290ms
+ GET /api/auth/session 200 in 1657ms
+ GET /api/auth/session 200 in 275ms
+ ✓ Compiled in 13.7s (2610 modules)
+ GET /dashboard 200 in 603ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 10.3s (2601 modules)
+Image with src "/logo.png?v=1" is using a query string which is not configured in images.localPatterns. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpatterns
+ GET /favicon.png?v=1 404 in 10859ms
+ GET /dashboard 200 in 584ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 6.3s (1492 modules)
+Image with src "/logo.png?v=1" is using a query string which is not configured in images.localPatterns. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpatterns
+ GET /api/auth/session 200 in 8330ms
+ GET /dashboard 200 in 7205ms
+ POST /api/auth/_log 200 in 65ms
+ GET /api/auth/session 200 in 851ms
+ ○ Compiling /api/trips ...
+ ✓ Compiled /api/trips in 24.7s (1577 modules)
+ GET /api/trips 200 in 36000ms
+ GET /api/auth/session 200 in 1297ms
+Image with src "/logo.png?v=1" is using a query string which is not configured in images.localPatterns. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpatterns
+ GET /dashboard 200 in 2325ms
+ GET /api/auth/session 200 in 171ms
+ GET /api/trips 200 in 173ms
+ GET /api/auth/session 200 in 744ms
+ GET /api/auth/session 200 in 308ms
+ GET /dashboard 200 in 585ms
+ GET /api/auth/session 200 in 98ms
+ GET /api/trips 200 in 74ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 17.7s (2617 modules)
+ GET /api/auth/session 200 in 10234ms
+ GET /dashboard 200 in 1214ms
+ GET /api/auth/session 200 in 76ms
+Image with src "/logo.png?v=1" is using a query string which is not configured in images.localPatterns. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpatterns
+ GET /dashboard 200 in 2307ms
+ GET /api/auth/session 200 in 117ms
+ ○ Compiling /api/trips ...
+ ✓ Compiled /api/trips in 6.6s (1577 modules)
+ GET /api/trips 200 in 13033ms
+ GET /api/auth/session 200 in 870ms
+ GET /api/auth/session 200 in 229ms
+ ○ Compiling / ...
+ ✓ Compiled / in 13.6s (1523 modules)
+Image with src "/logo.png?v=1" is using a query string which is not configured in images.localPatterns. This config will be required starting in Next.js 16.
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-localpatterns
+ GET / 200 in 18236ms
+ GET / 200 in 2031ms
+ GET / 200 in 2129ms
+ GET / 200 in 598ms
+ GET /api/auth/session 200 in 268ms
+ GET /api/auth/session 200 in 25ms
+ GET /api/auth/session 200 in 140ms
+ GET / 200 in 165ms
+ GET /api/auth/session 200 in 3081ms
+ GET /api/auth/session 200 in 788ms
+ GET / 200 in 2762ms
+ GET /api/auth/session 200 in 143ms
+ GET /api/auth/session 200 in 225ms
+ GET /api/auth/session 200 in 316ms
+ GET /api/auth/session 200 in 243ms
+ GET /api/auth/session 200 in 91ms
+ GET /api/auth/session 200 in 155ms
+ GET / 200 in 1023ms
+ GET /api/auth/session 200 in 128ms
+ GET / 200 in 8251ms
+ ⚠ Your page app/dashboard/page.tsx did not have a root layout. We created app/dashboard/layout.tsx for you.
+ ⚠ Your page app/plan/select-photos/page.tsx did not have a root layout. We created app/plan/layout.tsx for you.
+ ⚠ Your page app/plan/generate/page.tsx did not have a root layout. We created app/plan/layout.tsx for you.
+ ⚠ Your page app/plan/itinerary/page.tsx did not have a root layout. We created app/plan/layout.tsx for you.
+ ⨯ src/app/page.tsx
+Can't resolve private-next-app-dir/page
+ ⨯ src/app/page.tsx
+Can't resolve private-next-app-dir/page
+ ○ Compiling /api/auth/[...nextauth] ...
+ ⨯ src/app/page.tsx
+Can't resolve private-next-app-dir/page
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 500 in 21784ms
+ ⚠ Your page app/auth/signin/page.tsx did not have a root layout. We created app/auth/layout.tsx for you.
+ ⨯ src/app/page.tsx
+Can't resolve private-next-app-dir/page
+ GET /auth/signin 500 in 56630ms
+ GET /auth/signin 500 in 21ms
+ GET /auth/signin 500 in 45ms
+ GET /auth/signin 500 in 18ms
+ GET /auth/signin 500 in 17ms
+ GET /auth/signin 500 in 19ms
+ GET /auth/signin 500 in 27ms
+ GET / 500 in 548ms
+ GET / 500 in 1257ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ src/app/page.tsx
+Can't resolve private-next-app-dir/page
+ GET / 200 in 1177ms
+ GET / 500 in 113ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ src/app/page.tsx
+Can't resolve private-next-app-dir/page
+ GET / 200 in 20627ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 7776ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 198ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 3033ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ src/app/page.tsx
+Can't resolve private-next-app-dir/page
+ GET / 200 in 969ms
+ GET / 500 in 61ms
+ GET / 500 in 554ms
+ GET / 500 in 41ms
+[?25h

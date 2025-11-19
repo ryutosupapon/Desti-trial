@@ -1,0 +1,57 @@
+version: "1.0"
+
+pre_deployment:
+  environment_variables:
+    - name: NODE_ENV
+      value: production
+      required: true
+    - name: DATABASE_URL
+      description: PostgreSQL connection string
+      required: true
+      encrypted: true
+    - name: REDIS_URL
+      description: Redis connection string
+      required: true
+      encrypted: true
+    - name: AWS_ACCESS_KEY_ID
+      required: true
+      encrypted: true
+    - name: AWS_SECRET_ACCESS_KEY
+      required: true
+      encrypted: true
+    - name: AWS_S3_BUCKET
+      required: true
+    - name: JWT_SECRET
+      required: true
+      encrypted: true
+    - name: OPENAI_API_KEY
+      required: true
+      encrypted: true
+    - name: STRIPE_SECRET_KEY
+      required: true
+      encrypted: true
+    - name: STRIPE_WEBHOOK_SECRET
+      required: true
+      encrypted: true
+
+deployment_steps:
+  - step: 1
+    name: Database migrations
+    command: "npm run migrate:production"
+  - step: 2
+    name: Build production assets
+    command: "npm run build:production"
+  - step: 3
+    name: Deploy services
+    strategy: blue-green
+  - step: 4
+    name: Deploy frontend
+    strategy: rolling
+    invalidate_cdn: true
+
+post_deployment:
+  monitoring:
+    - name: Error rate monitoring
+      threshold: 0.5%
+    - name: Response time monitoring
+      p95_threshold: 500ms

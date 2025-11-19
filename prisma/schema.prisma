@@ -1,0 +1,142 @@
+// Prisma schema for NextAuth.js and Trip management
+// Adjust fields as needed for your app
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String   @id @default(cuid())
+  name          String?
+  email         String?  @unique
+  emailVerified DateTime?
+  image         String?
+  accounts      Account[]
+  sessions      Session[]
+  trips         Trip[]
+}
+
+model Account {
+  id                 String  @id @default(cuid())
+  userId             String
+  type               String
+  provider           String
+  providerAccountId  String
+  refresh_token      String?
+  access_token       String?
+  expires_at         Int?
+  token_type         String?
+  scope              String?
+  id_token           String?
+  session_state      String?
+  user               User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Trip {
+  id          String   @id @default(cuid())
+  title       String
+  destination String
+  startDate   DateTime
+  endDate     DateTime
+  travelers   Int
+  budget      Int?
+  budgetLevel String   @default("moderate")
+  status      String   @default("draft") // draft, photos_selected, itinerary_ready
+  itinerary   Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Scenic photo selection
+  selectedPhotos PhotoSelection[]
+
+  // Optional link to curated destination key
+  curatedDestinationId String?
+  curatedDestination   CuratedDestination? @relation(fields: [curatedDestinationId], references: [id], onDelete: SetNull)
+}
+
+// --- Sprint 3: Curated scenic destinations schema ---
+
+model CuratedDestination {
+  id          String             @id @default(cuid())
+  key         String             @unique // e.g., "dolomites", "swiss-alps"
+  name        String
+  description String
+  country     String
+  heroImage   String
+  isActive    Boolean            @default(true)
+  locations   CuratedLocation[]
+  trips       Trip[]
+  createdAt   DateTime           @default(now())
+  updatedAt   DateTime           @updatedAt
+}
+
+model CuratedLocation {
+  id             String             @id @default(cuid())
+  destinationId  String
+  destination    CuratedDestination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  name           String
+  description    String
+  locationType   String             // mountain, lake, hiking, valley, etc.
+  difficulty     String?            // easy, moderate, difficult
+  bestTime       String?            // "Jun-Sep", "Year-round"
+  coordinates    String?
+  isActive       Boolean            @default(true)
+  photos         CuratedPhoto[]
+  selections     PhotoSelection[]
+  createdAt      DateTime           @default(now())
+  updatedAt      DateTime           @updatedAt
+}
+
+model CuratedPhoto {
+  id           String          @id @default(cuid())
+  locationId   String
+  location     CuratedLocation @relation(fields: [locationId], references: [id], onDelete: Cascade)
+  url          String
+  thumbnailUrl String
+  altText      String
+  photographer String?
+  isPrimary    Boolean         @default(false)
+  isActive     Boolean         @default(true)
+  selections   PhotoSelection[]
+  createdAt    DateTime        @default(now())
+  updatedAt    DateTime        @updatedAt
+}
+
+model PhotoSelection {
+  id         String          @id @default(cuid())
+  tripId     String
+  trip       Trip            @relation(fields: [tripId], references: [id], onDelete: Cascade)
+  locationId String
+  location   CuratedLocation @relation(fields: [locationId], references: [id])
+  photoId    String
+  photo      CuratedPhoto    @relation(fields: [photoId], references: [id])
+  createdAt  DateTime        @default(now())
+
+  @@unique([tripId, photoId])
+  @@index([tripId])
+}
