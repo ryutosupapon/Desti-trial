@@ -62,8 +62,9 @@ async function seedPhotoData() {
       photos: {
         create: [
           {
-            url: '/destinations/dolomites/tre-cime/primary.jpg',
-            thumbnailUrl: '/destinations/dolomites/tre-cime/primary.jpg',
+            // Migrated to S3 (original local path: /destinations/dolomites/tre-cime/primary.jpg)
+            url: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/dolomites/tre-cime/primary.jpg',
+            thumbnailUrl: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/dolomites/tre-cime/primary.jpg',
             altText: 'Tre Cime di Lavaredo at golden hour',
             isPrimary: true,
           },
@@ -113,8 +114,9 @@ async function seedPhotoData() {
         photos: {
           create: [
             {
-              url: '/destinations/dolomites/alpe-di-siusi/primary.jpg',
-              thumbnailUrl: '/destinations/dolomites/alpe-di-siusi/primary.jpg',
+              // Migrated to S3 (original local path: /destinations/dolomites/alpe-di-siusi/primary.jpg)
+              url: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/dolomites/alpe-di-siusi/primary.jpg',
+              thumbnailUrl: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/dolomites/alpe-di-siusi/primary.jpg',
               altText: 'Cabins on Alpe di Siusi meadow at sunrise',
               isPrimary: true,
             },
@@ -151,8 +153,9 @@ async function seedPhotoData() {
       photos: {
         create: [
           {
-            url: '/destinations/switzerland/lauterbrunnen/primary.jpg',
-            thumbnailUrl: '/destinations/switzerland/lauterbrunnen/primary.jpg',
+            // Migrated to S3 (original local path: /destinations/switzerland/lauterbrunnen/primary.jpg)
+            url: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/switzerland/lauterbrunnen/primary.jpg',
+            thumbnailUrl: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/switzerland/lauterbrunnen/primary.jpg',
             altText: 'Lauterbrunnen Valley with waterfalls and green meadows',
             isPrimary: true,
           },
@@ -174,8 +177,9 @@ async function seedPhotoData() {
       photos: {
         create: [
           {
-            url: '/destinations/switzerland/matterhorn/primary.jpg',
-            thumbnailUrl: '/destinations/switzerland/matterhorn/primary.jpg',
+            // Migrated to S3 (original local path: /destinations/switzerland/matterhorn/primary.jpg)
+            url: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/switzerland/matterhorn/primary.jpg',
+            thumbnailUrl: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/switzerland/matterhorn/primary.jpg',
             altText: 'Matterhorn at sunrise with alpenglow',
             isPrimary: true,
           },
@@ -183,6 +187,122 @@ async function seedPhotoData() {
       },
     },
   })
+
+  // Oeschinensee (Switzerland) - newly added with S3 asset
+  const existingOesch = await prisma.curatedLocation.findFirst({
+    where: { destinationId: switzerland.id, name: 'Oeschinensee' },
+  })
+  if (!existingOesch) {
+    await prisma.curatedLocation.create({
+      data: {
+        destinationId: switzerland.id,
+        name: 'Oeschinensee',
+        description: 'Turquoise alpine lake surrounded by high peaks near Kandersteg',
+        locationType: 'lake',
+        difficulty: 'easy',
+        bestTime: 'Jun-Sep',
+        coordinates: '46.4980,7.7267',
+        photos: {
+          create: [
+            {
+              // Migrated to S3 (original local path: /destinations/switzerland/oeschinensee/primary.jpg)
+              url: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/switzerland/oeschinensee/primary.jpg',
+              thumbnailUrl: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/switzerland/oeschinensee/primary.jpg',
+              altText: 'Oeschinensee turquoise lake with surrounding cliffs',
+              isPrimary: true,
+            },
+          ],
+        },
+      },
+    })
+  }
+
+  // Saxer Lücke (Switzerland) - newly added with S3 asset
+  const existingSaxer = await prisma.curatedLocation.findFirst({
+    where: { destinationId: switzerland.id, name: 'Saxer Lücke' },
+  })
+  if (!existingSaxer) {
+    await prisma.curatedLocation.create({
+      data: {
+        destinationId: switzerland.id,
+        name: 'Saxer Lücke',
+        description: 'Dramatic rock formation gap offering panoramic ridge views',
+        locationType: 'viewpoint',
+        difficulty: 'moderate',
+        bestTime: 'Jun-Oct',
+        coordinates: '47.2747,9.3813',
+        photos: {
+          create: [
+            {
+              // Migrated to S3 (original local path: /destinations/switzerland/saxer-lucke/primary.jpg)
+              url: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/switzerland/saxer-lucke/primary.jpg',
+              thumbnailUrl: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/switzerland/saxer-lucke/primary.jpg',
+              altText: 'Saxer Lücke rocky gap with dramatic alpine backdrop',
+              isPrimary: true,
+            },
+          ],
+        },
+      },
+    })
+  }
+
+  // Stechelberg (Switzerland) - newly added with S3 asset
+  const existingStechelberg = await prisma.curatedLocation.findFirst({
+    where: { destinationId: switzerland.id, name: 'Stechelberg' },
+  })
+  if (!existingStechelberg) {
+    await prisma.curatedLocation.create({
+      data: {
+        destinationId: switzerland.id,
+        name: 'Stechelberg',
+        description: 'Alpine hamlet at the end of the Lauterbrunnen Valley surrounded by cliffs and waterfalls',
+        locationType: 'village',
+        difficulty: 'easy',
+        bestTime: 'May-Oct',
+        coordinates: '46.5452,7.9079', // approximate coordinates
+        photos: {
+          create: [
+            {
+              // Migrated to S3 (original local path: /destinations/switzerland/stechelberg/primary.jpg)
+              url: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/switzerland/stechelberg/primary.jpg',
+              thumbnailUrl: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/switzerland/stechelberg/primary.jpg',
+              altText: 'Stechelberg hamlet with dramatic valley walls and waterfalls',
+              isPrimary: true,
+            },
+          ],
+        },
+      },
+    })
+  }
+
+  // Wengen (Switzerland) - newly added with S3 asset
+  const existingWengen = await prisma.curatedLocation.findFirst({
+    where: { destinationId: switzerland.id, name: 'Wengen' },
+  })
+  if (!existingWengen) {
+    await prisma.curatedLocation.create({
+      data: {
+        destinationId: switzerland.id,
+        name: 'Wengen',
+        description: 'Car-free mountain village overlooking Lauterbrunnen Valley, gateway to Jungfrau region',
+        locationType: 'village',
+        difficulty: 'easy',
+        bestTime: 'Jun-Sep',
+        coordinates: '46.6090,7.9217', // approximate coordinates
+        photos: {
+          create: [
+            {
+              // Migrated to S3 (original local path: /destinations/switzerland/wengen/primary.jpg)
+              url: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/switzerland/wengen/primary.jpg',
+              thumbnailUrl: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/switzerland/wengen/primary.jpg',
+              altText: 'Wengen village with alpine backdrop and valley views',
+              isPrimary: true,
+            },
+          ],
+        },
+      },
+    })
+  }
 
   // Lofoten destination
   const lofoten = await prisma.curatedDestination.upsert({

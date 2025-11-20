@@ -21,7 +21,9 @@ export async function POST(req: Request) {
     const outPath = path.join(folder, 'primary.jpg')
     await writeFile(outPath, buffer)
 
-    return NextResponse.json({ success: true, url: '/destinations/dolomites/tre-cime/primary.jpg' })
+  // Since large images are being migrated to S3, return the S3 URL instead of local path.
+  // NOTE: This route still writes locally for backward compatibility; consider removing local write once all consumers use S3.
+  return NextResponse.json({ success: true, url: 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/dolomites/tre-cime/primary.jpg' })
   } catch (e) {
     console.error('Tre Cime upload failed:', e)
     return NextResponse.json({ error: 'Upload failed' }, { status: 500 })

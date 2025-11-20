@@ -87,7 +87,18 @@ async function main() {
       continue
     }
 
-    const url = `/destinations/dolomites/${loc.slug}/primary.jpg`
+    // Use S3 URL for large migrated assets (migrated: adolf-munkelweg, cadini-di-misurina, karersee, lago-di-braies, lago-di-sorapis, seceda, val-di-funes)
+    const baseLocal = `/destinations/dolomites/${loc.slug}/primary.jpg`
+    const s3Map: Record<string, string> = {
+      'adolf-munkelweg': 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/dolomites/adolf-munkelweg/primary.jpg',
+      'cadini-di-misurina': 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/dolomites/cadini-di-misurina/primary.jpg',
+      'karersee': 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/dolomites/karersee/primary.jpg',
+      'lago-di-braies': 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/dolomites/lago-di-braies/primary.jpg',
+      'lago-di-sorapis': 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/dolomites/lago-di-sorapis/primary.jpg',
+      'seceda': 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/dolomites/seceda/primary.jpg',
+      'val-di-funes': 'https://desti-images.s3.us-east-2.amazonaws.com/destinations/dolomites/val-di-funes/primary.jpg',
+    }
+    const url = s3Map[loc.slug] || baseLocal
     const created = await prisma.curatedLocation.create({
       data: {
         destinationId: dest.id,
@@ -105,7 +116,9 @@ async function main() {
     const folder = path.join(process.cwd(), 'public', 'destinations', 'dolomites', loc.slug)
     await mkdir(folder, { recursive: true })
     const readmePath = path.join(folder, 'README.txt')
-    const note = `Place your image at primary.jpg for ${loc.name}.\nExpected path: ${url}\n`
+    const note = s3Map[loc.slug]
+      ? `This location's primary image is served from S3 for deployment size reasons.\nS3 Object: ${url}\n(Local fallback path if needed: ${baseLocal})\n`
+      : `Place your image at primary.jpg for ${loc.name}.\nExpected path: ${url}\n`
     await writeFile(readmePath, note)
 
     // Write a tiny JPEG placeholder if primary.jpg is missing

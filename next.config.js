@@ -2,12 +2,17 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    // Remove query param warnings by explicitly allowing hero and root assets
-    // (Better: stop using version query strings like ?v=1 entirely.)
-    // Next 15 still serves these without config; we future-proof for 16.
     formats: ['image/avif', 'image/webp'],
+    // Allow remote S3 bucket for migrated large assets
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'desti-images.s3.us-east-2.amazonaws.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
-  // Keep webpack persistent caching enabled for faster dev rebuilds
   webpack: (config) => {
     return config
   },
