@@ -219,12 +219,7 @@ function SelectPhotosInner() {
             <span className="font-medium text-blue-600">{trip.destination}</span>
           </p>
 
-          {/* Helper link to quickly replace curated images for this destination */}
-          <div className="text-xs text-gray-500">
-            <Link href={`/destinations/${toDestinationKey(trip.destination)}/upload`} className="underline">
-              Replace curated photos for this destination
-            </Link>
-          </div>
+          {/* Curated photo replacement feature removed for production security (was: upload route link) */}
 
           <div className="flex items-center justify-center gap-4 text-sm text-gray-500">
             <div className="flex items-center">
@@ -296,9 +291,7 @@ function SelectPhotosInner() {
             <CardContent className="pt-6 text-center">
               <p className="text-gray-700 font-medium">No curated locations found yet for this destination.</p>
               <p className="text-gray-500 text-sm mt-1">Showing placeholders while content loads in.</p>
-              <div className="mt-3 text-sm">
-                <Link href={`/destinations/${toDestinationKey(trip.destination)}/upload`} className="text-blue-600 underline">Upload your own photos now</Link>
-              </div>
+              {/* Upload link removed to prevent user photo modifications */}
             </CardContent>
           </Card>
 
